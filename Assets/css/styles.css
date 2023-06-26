@@ -1,0 +1,45 @@
+/* Color of the links BEFORE scroll */
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler .fa-bars {
+    color: #fff;
+}
+
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler .fa-bars {
+    color: #4f4f4f;
+}
+
+/* Color of the navbar AFTER scroll */
+.navbar-scrolled {
+    background-color: #fff;
+}
+
+/* An optional height of the navbar AFTER scroll */
+.navbar.navbar-scroll.navbar-scrolled {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.section__title {
+    font-size: xxx-large;
+    margin-top: 10px;
+}
+
+.section__subtitle {
+    display: block;
+    font-size: small;
+    margin-bottom: 2%;
+}
+
+.section__title, .section__subtitle {
+    color: #34495e;
+    box-shadow: black;
+    text-align: center;
+}
+
+.table{
+    margin-top: 5%;
+    width:97.5%;
+    border-radius: 20rem;
+}
