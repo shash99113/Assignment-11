@@ -1,10 +1,304 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="Assets/bootstrap-5.3.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="Assets/css/styles.css">
+    <title>POS System</title>
+
 </head>
+
 <body>
-$END$
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary shadow mb-5 bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    Shashika's POs Systemmmmmmm
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarsSupportedContent" aria-controls="navbarsSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars fa-lg"></i>
+                </button>
+
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#customers">Customers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#items" tabindex="-1" aria-disabled="true">Items</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#orders" tabindex="-1" aria-disabled="true">Orders</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <button class="btn" type="submit">
+                            <i class="fa-solid fa-user-plus"></i>Sign Up</button>
+                        <button class="btn" type="submit">
+                            <i class="fa-solid fa-right-from-bracket"></i>Log Out</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--============================== home ==============================-->
+    <section id="home">
+        <br>
+        <br>
+        <div class="carousel carousel-dark slide" id="carouselExampleDark">
+            <h1 class="section__title">Mini-Pos System</h1>
+            <div>
+                <img src="Assets/img/2903544-removebg.png" class="img-fluid rounded mx-auto d-md-block" width="50%"
+                    height="40%" style="margin-top: 30px" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!--============================== customers ==============================-->
+    <section id="customers">
+        <br>
+        <div style="background-color: #ecf0f1">
+            <br>
+            <h2 class="section__title">CUSTOMERS</h2>
+            <span class="section__subtitle">Manage Customers</span>
+
+            <!--<div class="container-fluid w-50%" style="background-color: transparent">
+            <form class="row g-3 align-items-center m-5">
+                <div class="col">
+                    <label for="CusId" class="form-label">Customer ID</label>
+                    <input type="number" class="form-control" id="Cusid">
+                </div>
+                <div class="col">
+                    <label for="CusName" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="CusName">
+                </div>
+                <div class="col">
+                    <label for="CusAddress" class="form-label">Address</label>
+                    <input type="text" class="form-control" id="CusAddress" placeholder="1234 Main St">
+                </div>
+                <div class="col">
+                    <label for="CusSalary" class="form-label">Salary (Rs.)</label>
+                    <input type="number" class="form-control" id="CusSalary" placeholder="100,000">
+                </div>
+            </form>
+        </div>
+
+            &lt;!&ndash;============================== table ==============================&ndash;&gt;
+        <div class="container-fluid w-50%">
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th scope="col">No</th>
+                    <th scope="col">Cus ID</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">Salary</th>
+                </tr>
+                </thead>
+
+                <tbody class="table-group-divider">
+
+                <tr>
+                    <th scope="row">1</th>
+                    <td>001</td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>002</td>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>003</td>
+                    <td>Larry the Bird</td>
+                    <td>Victoria</td>
+                    <td>@twitter</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>-->
+
+            <div class="container text-center">
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <form class="row g- align-items-center m-auto">
+                            <div class="col">
+                                <label for="CusId" class="form-label">Customer ID</label>
+                                <input type="number" class="form-control" id="Cusid">
+                            </div>
+                            <div class="col">
+                                <label for="CusName" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="CusName">
+                            </div>
+                            <div class="col">
+                                <label for="CusAddress" class="form-label">Address</label>
+                                <input type="text" class="form-control" id="CusAddress" placeholder="1234 Main St">
+                            </div>
+                            <div class="col">
+                                <label for="CusSalary" class="form-label">Salary (Rs.)</label>
+                                <input type="number" class="form-control" id="CusSalary" placeholder="100,000">
+                            </div>
+                        </form>
+                    </div>
+
+                    <!--=============== TABLE ===============-->
+                    <div class="container-fluid">
+                        <div class="table-wrapper-scroll-y my-custom-scrollbar">
+
+                            <table class="table table-bordered table-striped mb-0">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">ID</th>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Address</th>
+                                        <th scope="col">Salary</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Jacob</td>
+                                        <td>Thornton</td>
+                                        <td>@fat</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Larry</td>
+                                        <td>the Bird</td>
+                                        <td>@twitter</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">5</th>
+                                        <td>Jacob</td>
+                                        <td>Thornton</td>
+                                        <td>@fat</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">6</th>
+                                        <td>Larry</td>
+                                        <td>the Bird</td>
+                                        <td>@twitter</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <button type="button" class="btn btn-outline-success m-1">Add</button>
+                <button type="button" class="btn btn-outline-warning m-1">Update</button>
+                <button type="button" class="btn btn-outline-danger m-1">Delete</button>
+                <button type="button" class="btn btn-outline-primary m-1">Get All</button>
+                <button type="button" class="btn btn-outline-secondary m-1">Clear All</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!--============================== items ==============================-->
+    <section id="items">
+        <br>
+        <!--<div class="flex-column shadow" style="color: #34495e">
+
+    </div>-->
+        <h2 class="section__title">ITEMS</h2>
+        <span class="section__subtitle">Manage Items</span>
+
+        <form class="row g-3 align-items-center m-5">
+            <div class="col-md-6">
+                <label for="id" class="form-label">Customer ID</label>
+                <input type="number" class="form-control" id="id">
+            </div>
+            <div class="col-md-6">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="name">
+            </div>
+            <div class="col-12">
+                <label for="address" class="form-label">Address</label>
+                <input type="text" class="form-control" id="address" placeholder="1234 Main St">
+            </div>
+            <div class="col-4">
+                <label for="salary" class="form-label">Salary (Rs.)</label>
+                <input type="number" class="form-control" id="salary" placeholder="100,000">
+            </div>
+        </form>
+
+    </section>
+
+
+    <!--============================== orders ==============================-->
+    <section id="orders">
+        <h2 class="section__title">ORDERS</h2>
+        <span class="section__subtitle">Manage Orders</span>
+    </section>
+
+    <script src="Assets/bootstrap-5.3.0-dist/js/bootstrap.js"></script>
+
+    <script>
+
+        function $(s) {
+
+        }
+
+        document.getElementById("btnHome").addEventListener("click", function () {
+            $("#home").css({ display: 'block' })
+            $("#customers").css({ display: 'none' })
+            $("#items").css({ display: 'none' })
+            $("#orders").css({ display: 'none' })
+
+        })
+
+        document.getElementById("btnCustomers").addEventListener("click", function () {
+            $("#home").css({ display: 'none' })
+            $("#customers").css({ display: 'block' })
+            $("#items").css({ display: 'none' })
+            $("#orders").css({ display: 'none' })
+        })
+        document.getElementById("btnItems").addEventListener("click", function () {
+            $("#home").css({ display: 'none' })
+            $("#customers").css({ display: 'none' })
+            $("#items").css({ display: 'block' })
+            $("#orders").css({ display: 'none' })
+        })
+
+        document.getElementById("btnOrders").addEventListener("click", function () {
+            $("#home").css({ display: 'none' })
+            $("#customers").css({ display: 'none' })
+            $("#items").css({ display: 'none' })
+            $("#orders").css({ display: 'block' })
+        })
+
+    </script>
 </body>
+
 </html>
